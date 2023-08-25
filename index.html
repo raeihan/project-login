@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project PH1</title>
+</head>
+<body>
+    <div class="bungkus">
+    <section id="login">
+        <h2 class="h2">Halaman Login</h2>
+        <h4 class="h4">Silahkan masukkan akun anda</h4>
+        <form action="#" class="form_username">
+            <label for="Username"></label>
+            <input type="text" id="input_user" placeholder="Masukkan Username Anda" required>
+        </form>
+        <form action="#" class="form_password">
+            <label for="Password"></label>
+            <input type="password" id="input_pass" placeholder="Masukkan Password Anda" required>
+        </form>
+        <button type="submit" class="btn" onclick="btn()">Login Sekarang</button>
+    </section>
+</div>
+<script>
+    const btn = () => {
+        var loginuser = document.getElementById("input_user").value
+        var loginpass = document.getElementById("input_pass").value
+        alert(`Selamat Datang, ${loginuser} \nPassword Anda Adalah: ${loginpass}`)
+    }
+</script>
+</body>
+</html>
